@@ -1,0 +1,90 @@
+/* styles.css */
+
+body {
+   font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+   
+   
+
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="file"] {
+    padding: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/*Configure The "php.ini" File
+First, ensure that PHP is configured to allow file uploads.
+
+In your "php.ini" file, search for the file_uploads directive, and set it to On:
+
+file_uploads = On 
+$_FILES
+ARRAY=>
+  (
+            [name] => MyFile.jpg
+            [type] => image/jpeg
+            [tmp_name] => /tmp/php/php6hst32
+            [error] => UPLOAD_ERR_OK
+            [size] => 98174
+        )
+print_r($_FILES);
+Array ( [uploadfile] => Array 
+( 
+  [name] => back.jpeg [full_path] => back.jpeg 
+  [type] => image/jpeg [tmp_name] => C:\xampp\tmp\php870.tmp 
+  [error] => 0 
+  [size] => 116508 ) )
+*/
